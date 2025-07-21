@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script src="https://kit.fontawesome.com/690a9ad192.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Validacion Formulario</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <form>
+        <div class="mb-3">
+          <label for="inputname" class="form-label">Nombre </label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputname"
+          />
+          <div id="name-error" class="form-text">Incorrecto,ingrese un nombre valido</div>
+        </div>
+        <div class="mb-3">
+          <label for="inputmail" class="form-label">Email </label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputmail"
+            aria-describedby="emailHelp"
+            placeholder="example@gmail.com"
+          />
+          <div id="email-error" class="form-text">Ingrese una direccion valida</div>
+        </div>
+        <div class="mb-3">
+                        <label for="form-label">Mensaje</label>
+
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea"
+            ></textarea>
+            <label for="floatingTextarea">Comments</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="envio"  disabled>Enviar</button>
+        <div id="send-ok" class="form-text">Envio exitoso <i class="fa-solid fa-circle-check"></i> </div>
+
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  
+</html>
